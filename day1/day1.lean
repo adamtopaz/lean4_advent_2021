@@ -11,7 +11,7 @@ def tripleSums : List Nat → List Nat
 | (x :: y :: []) => []
 | (x :: y :: z :: zs) => (x + y + z) :: tripleSums (y :: z :: zs)
 
-def fp : FilePath := "/home/adam/Lean4-Projects/advent2021/day1_input"
+def fp : FilePath := "/home/adam/Lean4-Projects/advent2021/day1/input"
 
 def evalFunOnNatList (f : List Nat → α) (fp : FilePath) : IO α := do
   let L := (← IO.FS.lines fp).map (λ S => S.toNat!)
