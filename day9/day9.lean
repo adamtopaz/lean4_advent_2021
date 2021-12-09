@@ -82,5 +82,5 @@ def go2 : IO Nat := do
   E := E.sort.reverse
   return (E.get! 0) * (E.get! 1) * (E.get! 2)
 
+#eval go
 #eval go2
---#eval go
