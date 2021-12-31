@@ -1,4 +1,5 @@
-import Advent2021
+import Advent2021.day25.part1
 
-def main : IO Unit :=
-  IO.println s!"Hello, {hello}!"
+def main : IO Unit := do
+  let n := ← go
+  IO.println n 
